@@ -1,0 +1,24 @@
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class Try_CatchDemo {	
+	int num1;
+	int num2;
+	int res;
+	static Scanner sc;
+	public static void main(String[] args) {
+sc = new Scanner(System.in);
+try {
+System.out.println("enter the first number");
+int num1 = sc.nextInt();
+System.out.println("enter the second number");
+int num2 = sc.nextInt();
+int res=num1+num2;
+System.out.println("the answer is " + res);	
+	}
+catch (InputMismatchException e)
+{
+System.out.println("Type only numeric values");		
+}
+}
+}
